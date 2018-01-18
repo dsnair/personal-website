@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project showcases the saga of how my skills on web technologies matured over time.
+This project showcases how my web technologies skills matured over time.
 
 ## Work Summary
 
