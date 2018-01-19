@@ -15,7 +15,7 @@
     <!-- Navigation bar -->
     <nav>
       <a href="index.html">Home</a>
-      <a href="#">Skills</a>
+      <a href="skills.html">Skills</a>
       <a href="#">Portfolio</a>
       <a href="#">Background</a>
       <a href="contact.html">Contact</a>
@@ -31,21 +31,30 @@
 
       <!--  Contact form -->
       <form action="#" method="post">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="user_name" value="Your Name">
-        </div>
-        <div>
-            <label for="mail">Email</label>
-            <input type="email" id="mail" name="user_mail" value="Your Email">
-        </div>
-        <div>
-            <label for="msg">Message</label>
-            <textarea id="msg" name="user_msg">Your Message</textarea>
-        </div>
-        <div class="button">
-          <button type="submit">Send</button>
-        </div>
+        <fieldset>
+          <legend>Contact</legend>
+          <div>
+              <label for="name">
+                Name <abbr title="Required">*</abbr>
+              </label>
+              <input type="search" id="name" name="user_name" value="Your Name" autofocus=True>
+          </div>
+          <div>
+              <label for="mail">
+                Email <abbr title="Required">*</abbr>
+              </label>
+              <input type="email" id="mail" name="user_mail" value="Your Email">
+          </div>
+          <div>
+              <label for="msg">
+                Message <abbr title="Required">*</abbr>
+              </label>
+              <textarea id="msg" name="user_msg">Your Message</textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Send</button>
+          </div>
+        </fieldset>
       </form>
 
       <!--  Social media links -->
@@ -55,6 +64,9 @@
         </a>
         <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
           <img src="image/linkedin-logo.png" alt="https://www.linkedin.com/in/dsnair/" width=25 height=25>
+        </a>
+        <a href="mailto:nowhere@gmail.com" title="Email">
+          <img src="image/email-logo.png" alt="nowhere@gmail.com" width=30 height=30>
         </a>
       </aside>
     </main>
