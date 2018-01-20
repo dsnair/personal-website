@@ -1,0 +1,17 @@
+body {
+  /* background-color: #6f7989; */
+  background-color: rgb(111, 121, 136);
+}
+
+nav {
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+a {
+  color: #919caa;
+}
+
+abbr {
+  color: red;
+}

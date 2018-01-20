@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="author" content="Divya Nair">
     <!--  Description to be displayed on web browser search result -->
-    <meta name="description" content="This is Divya Nair's website. Follow her @dsnair on GitHub and LinkedIn!">
+    <meta name="description"
+          content="This is Divya Nair's website. Follow her @dsnair on GitHub and LinkedIn!">
     <!--  Title for naming tab and bookmark -->
     <title>Divya Nair</title>
     <!-- Favicon -->
-    <link rel="icon" href="image/favicon.jpg">
+    <link rel="icon" href="images/favicon.jpg">
+    <!--  CSS -->
+    <link rel="stylesheet" href="style/style.css">
   </head>
-  <body>
 
+  <body>
     <!-- Navigation bar -->
     <nav>
       <a href="index.html">Home</a>
@@ -24,7 +27,9 @@
     <!-- Main page content -->
     <main>
       <!--  SEO use heading contents for page ranking -->
-      <h1>Reach Out to Me!</h1>
+      <header>
+        <h1>Reach Out to Me!</h1>
+      </header>
       <p>
         I'd love to grab coffee and talk about project prospects with you!
       </p>
@@ -37,19 +42,27 @@
               <label for="name">
                 Name <abbr title="Required">*</abbr>
               </label>
-              <input type="search" id="name" name="user_name" value="Your Name" autofocus=True>
+              <input type="search"
+                     id="name"
+                     name="user_name"
+                     value="Your Name"
+                     autofocus=True>
           </div>
           <div>
               <label for="mail">
                 Email <abbr title="Required">*</abbr>
               </label>
-              <input type="email" id="mail" name="user_mail" value="Your Email">
+              <input type="email"
+                     id="mail"
+                     name="user_mail"
+                     value="Your Email">
           </div>
           <div>
               <label for="msg">
                 Message <abbr title="Required">*</abbr>
               </label>
-              <textarea id="msg" name="user_msg">Your Message</textarea>
+              <textarea id="msg"
+                        name="user_msg">Your Message</textarea>
           </div>
           <div class="button">
             <button type="submit">Send</button>
@@ -58,19 +71,31 @@
       </form>
 
       <!--  Social media links -->
-      <aside>
+      <figure>
         <a href="https://github.com/dsnair" title="GitHub">
-          <img src="image/github-logo.jpg" alt="https://github.com/dsnair" width=25 height=25>
+          <!--  SEO recommends using images subdirectory and descriptive filenames -->
+          <img src="images/github-logo.jpg"
+               alt="https://github.com/dsnair"
+               width=25
+               height=25>
         </a>
         <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
-          <img src="image/linkedin-logo.png" alt="https://www.linkedin.com/in/dsnair/" width=25 height=25>
+          <img src="images/linkedin-logo.png"
+               alt="https://www.linkedin.com/in/dsnair/"
+               width=25
+               height=25>
         </a>
-        <a href="mailto:nowhere@gmail.com" title="Email">
-          <img src="image/email-logo.png" alt="nowhere@gmail.com" width=30 height=30>
+        <a href="mailto:nowhere@gmail.com">
+          <img src="images/email-logo.png"
+               alt="nowhere@gmail.com"
+               title="Email"
+               width=30
+               height=30>
         </a>
-      </aside>
+      </figure>
     </main>
 
+    <hr>
     <!-- Footer -->
     <footer>
       <p>&copy; by Divya Nair. All rights reversed.</p>
