@@ -27,74 +27,46 @@
     </nav>
 
     <!-- Main page content -->
-    <main>
-      <!--  SEO use heading contents for page ranking -->
-      <header>
-        <h1>Reach Out to Me!</h1>
-      </header>
-      <p>
-        I'd love to grab coffee and talk about project prospects with you!
-      </p>
+    <main class="contact">
+      <div class="contact-items">
+        <p>
+          I'd love to grab coffee and talk about project prospects with you!
+        </p>
 
-      <!--  Contact form -->
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Contact</legend>
-          <div>
-              <label for="name">
-                Name <abbr title="Required">*</abbr>
-              </label>
-              <input type="search"
-                     id="name"
-                     name="user_name"
-                     value="Your Name"
-                     autofocus=True>
-          </div>
-          <div>
-              <label for="mail">
-                Email <abbr title="Required">*</abbr>
-              </label>
-              <input type="email"
-                     id="mail"
-                     name="user_mail"
-                     value="Your Email">
-          </div>
-          <div>
-              <label for="msg">
-                Message <abbr title="Required">*</abbr>
-              </label>
-              <textarea id="msg"
-                        name="user_msg">Your Message</textarea>
-          </div>
-          <div class="button">
-            <button type="submit">Send</button>
-          </div>
-        </fieldset>
-      </form>
+        <!--  Contact form -->
+        <form action="#" method="post">
+          <fieldset>
+            <input type="text"
+                   id="name"
+                   name="user_name"
+                   placeholder="Name"
+                   autofocus=True>
+            <input type="email"
+                   id="email"
+                   name="user_mail"
+                   placeholder="Email">
+            <textarea type="text"
+                      id="msg"
+                      name="user_msg"
+                      placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+          </fieldset>
+        </form>
 
-      <!--  Social media links -->
-      <figure>
-        <a href="https://github.com/dsnair" title="GitHub">
-          <!--  SEO recommends using images subdirectory and descriptive filenames -->
-          <img src="images/github-logo.jpg"
-               alt="https://github.com/dsnair"
-               width=25
-               height=25>
-        </a>
-        <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
-          <img src="images/linkedin-logo.png"
-               alt="https://www.linkedin.com/in/dsnair/"
-               width=25
-               height=25>
-        </a>
-        <a href="mailto:nowhere@gmail.com">
-          <img src="images/email-logo.png"
-               alt="nowhere@gmail.com"
-               title="Email"
-               width=30
-               height=30>
-        </a>
-      </figure>
+        <!--  Social media links -->
+        <figure>
+          <a href="https://github.com/dsnair" title="GitHub">
+            <!--  SEO recommends using images subdirectory and descriptive filenames -->
+            <img src="images/github-logo.jpg" alt="https://github.com/dsnair">
+          </a>
+          <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
+            <img src="images/linkedin-logo.png" alt="https://www.linkedin.com/in/dsnair/">
+          </a>
+          <a href="mailto:nowhere@gmail.com">
+            <img src="images/email-logo.png" alt="nowhere@gmail.com" title="Email">
+          </a>
+        </figure>
+      </div>
     </main>
 
     <!-- Footer -->
