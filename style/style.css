@@ -1,12 +1,17 @@
 /* Navigation Bar */
 nav {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  grid-row-start: 1;
   box-shadow: 0px 4px 27px 0px rgba(45, 45, 45, 0.15);
+  display: grid;
 }
 
-.nav-item {
+nav div {
+  justify-self: center;
+  align-self: center;
+}
+
+nav a {
   font-size: 12px;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.5);
@@ -16,7 +21,7 @@ nav {
   padding: 10px 10px;
 }
 
-.nav-item:hover {
+nav a:hover {
   color: #ffffff;
 }
 
@@ -40,30 +45,35 @@ nav {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Footer */
-footer {
-  color: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  padding: 20px;
-}
-
 /*  Contact */
 .contact {
+  grid-row-start: 2;
+
   display: grid;
   grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 60% 20%;
+
+  background-image: url(../images/contact-bg.jpeg);
+  background-size: cover;
 }
 
 .contact-items {
+  grid-column-start: 2;
+  grid-row-start: 2;
+
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 80% 20%;
-  grid-column-start: 2;
-  background-color: rgb(52, 59, 79);
+
+  background-color: rgb(78, 84, 102);
+  padding: 50px 50px 0px 50px;
 }
 
 .contact-items p {
   align-self: center;
   justify-self: center;
+  line-height: 1.7em;
+  letter-spacing: 2px;
 }
 
 .contact-items fieldset {
@@ -84,9 +94,9 @@ footer {
 }
 
 .contact-items button {
-  background-color: lime;
   width: 100%;
   height: 30px;
+  background-color: lime;
 }
 
 .contact-items figure {
@@ -95,9 +105,9 @@ footer {
 }
 
 .contact-items img {
+  width: 30px;
+  height: 30px;
   padding-right: 10px;
-  height: 25px;
-  width: 25px;
 }
 
 .contact-items a {
@@ -112,8 +122,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
 }
 
-.punc, .current {
+.punc, .current-nav-item, .current-nav-item:hover {
   color: lime;
 }
