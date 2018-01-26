@@ -45,6 +45,19 @@ nav a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/*  Background */
+.bg {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.bg-items {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 50% 50%;
+}
+
 /*  Contact */
 .contact {
   grid-row-start: 2;
@@ -117,7 +130,7 @@ nav a:hover {
 /*  Common */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(111, 121, 136);
+  background-color: rgb(52, 59, 79);
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -126,6 +139,6 @@ body {
   grid-template-rows: 10% 90%;
 }
 
-.punc, .current-nav-item, .current-nav-item:hover {
+.lime, .lime:hover {
   color: lime;
 }
