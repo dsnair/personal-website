@@ -2,7 +2,7 @@
 nav {
   text-align: center;
   grid-row-start: 1;
-  box-shadow: 0px 4px 27px 0px rgba(45, 45, 45, 0.15);
+  box-shadow: 0px 4px 27px 0px rgba(45, 45, 45, 0.5);
   display: grid;
 }
 
@@ -26,7 +26,7 @@ nav a:hover {
 }
 
 /*  Home */
-.home h1, h2 {
+.home h1, .home h2 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 5px;
@@ -50,12 +50,57 @@ nav a:hover {
   display: grid;
   align-items: center;
   justify-items: center;
+  background-image: linear-gradient(rgba(52, 59, 79, 0.9), rgba(52, 59, 79, 0.9)),
+                    url("../images/background-bg.jpg");
 }
 
 .bg-items {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
   grid-template-columns: 50% 50%;
+}
+
+.bg-items div {
+  height: 200px;
+}
+
+.bg-items h1 {
+  color: lime;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.bg-items h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.bg-items h3 {
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+
+.bg-items p {
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+  font-weight: 100;
+  opacity: 0.6;
+}
+
+.bg-items #work {
+  text-align: right;
+  border-right: 1px dashed lime;
+  padding-right: 80px;
+  width: 300px;
+}
+
+.bg-items #education {
+  text-align: left;
+  margin-left: 80px;
+  width: 300px;
 }
 
 /*  Contact */
