@@ -1,21 +1,36 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 class Nav extends Component {
-  handleClick(navItem) {
-    this.props.onChange(navItem);
-  }
   render() {
     return (
       <nav>
         <div>
-          <button className="lime" onClick={() => this.handleClick("home")}>
+          <NavLink
+            exact
+            to="/"
+            className="unselected"
+            activeClassName="selected"
+          >
             Home
-          </button>
-          <button onClick={() => this.handleClick("background")}>
+          </NavLink>
+          <NavLink
+            exact
+            to="/background"
+            className="unselected"
+            activeClassName="selected"
+          >
             Background
-          </button>
-          <button onClick={() => this.handleClick("contact")}>Contact</button>
+          </NavLink>
+          <NavLink
+            exact
+            to="/contact"
+            className="unselected"
+            activeClassName="selected"
+          >
+            Contact
+          </NavLink>
         </div>
       </nav>
     );
