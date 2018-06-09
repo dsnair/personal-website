@@ -5,41 +5,98 @@
     <meta name="author" content="Divya Nair">
     <!--  Description to be displayed on web browser search result -->
     <meta name="description"
-          content="This is Divya Nair's website. Follow her @dsnair on GitHub and LinkedIn!">
+          content="Divya Nair | Front-end engineer | SF based. Follow @dsnair on GitHub and LinkedIn!">
     <!--  Title for naming tab and bookmark -->
     <title>Nair</title>
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
     <!--  CSS -->
-    <link rel="stylesheet" href="style/style.css">
-    <!--  Get Roboto Font -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <!-- Navigation bar -->
     <nav>
-      <div>
-        <a class="lime" href="index.html">Home</a>
-        <a href="background.html">Background</a>
-        <a href="contact.html">Contact</a>
-      </div>
     </nav>
 
     <!-- Main page content -->
-    <main class="home">
-      <!--  SEO use heading contents for page ranking -->
+    <main>
+      <!-- SEO use heading contents for page ranking -->
       <header>
-        <h1>
-          I<span class="lime">'</span>m <br />
-          Divya Nair<span class="lime">.</span>
-        </h1>
+        <!-- Home -->
+        <h1>Divya Nair</h1>
+        <h2>Front-end Engineer</h2>
       </header>
-        <h2>
-          Web Developer <span class="lime">&amp;</span> <br />
-          Data Analyst
-        </h2>
-    </main>
 
+
+      <!-- Background -->
+      <section>
+        <article>
+          <h1>Front-end Engineer</h1>
+          <h2>2018</h2>
+        </article>
+        <article>
+          <h1>Data Analyst</h1>
+          <h2>2017</h2>
+          <p>
+            Worked for a start-up in SF bay area; partnered with data scientists to analyze data using statistical and machine learning methodologies in Python and Google Cloud Platform.
+          </p>
+        </article>
+        <article>
+          <h1>Mathematician & Statistician</h1>
+          <h2>2010 - 2016</h2>
+          <p>
+            Pursued Ph.D in Statistics (didn't quite finish!) after M.S in Mathematics. Partnered with a company in Boston to build a production-level statistical software. Taught undergraduate Mathematics & Statistics courses.
+          </p>
+        </article>
+        <!-- Social media links -->
+        <figure>
+          <!-- SEO recommends using images subdirectory and descriptive filenames -->
+          <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
+            <img src="images/linkedin-logo.png" alt="https://www.linkedin.com/in/dsnair/">
+          </a>
+        </figure>
+      </section>
+
+
+      <!-- Contact -->
+      <section>
+        <p>I'd love to grab coffee and talk about project prospects with you!</p>
+
+        <!--  Contact form -->
+        <form action="#" method="post">
+          <fieldset>
+            <input type="text"
+                   id="name"
+                   name="user_name"
+                   placeholder="Name"
+                   autofocus=True>
+            <input type="email"
+                   id="email"
+                   name="user_mail"
+                   placeholder="Email">
+            <textarea type="text"
+                      id="msg"
+                      name="user_msg"
+                      placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+          </fieldset>
+        </form>
+
+        <!--  Social media links -->
+        <figure>
+          <a href="https://github.com/dsnair" title="GitHub">
+            <img src="images/github-logo.ico" alt="https://github.com/dsnair">
+          </a>
+          <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
+            <img src="images/linkedin-logo.png" alt="https://www.linkedin.com/in/dsnair/">
+          </a>
+          <a href="mailto:nowhere@gmail.com">
+            <img src="images/gmail-logo.ico" alt="nowhere@gmail.com" title="Email">
+          </a>
+        </figure>
+      </section>
+
+    </main>
   </body>
 </html>
