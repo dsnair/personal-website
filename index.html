@@ -8,10 +8,17 @@
           content="Divya Nair | Front-end engineer | SF based. Follow @dsnair on GitHub and LinkedIn!">
     <!--  Title for naming tab and bookmark -->
     <title>Nair</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
     <!--  CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Social Media Logos -->
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   </head>
 
   <body>
@@ -19,84 +26,85 @@
     <nav>
     </nav>
 
-    <!-- Main page content -->
-    <main>
-      <!-- SEO use heading contents for page ranking -->
-      <header>
-        <!-- Home -->
-        <h1>Divya Nair</h1>
-        <h2>Front-end Engineer</h2>
-      </header>
+    <!-- SEO use heading contents for page ranking -->
+    <header>
+      <!-- Home -->
+      <h1>Divya Nair</h1>
+      <h2>Front-end Engineer</h2>
+    </header>
+
+    <!-- Background -->
+    <section class="bg">
+      <article id="bg-eng">
+        <h1>Front-end Engineer</h1>
+        <h2>2018</h2>
+      </article>
+      <article>
+        <h1>Search Engine Marketer</h1>
+        <h2>2018</h2>
+        <p>
+          Led paid search ad campaigns and analyzed incoming traffic for an environmental non-profit organization in NYC (volunteer position).
+        </p>
+      </article>
+      <article>
+        <h1>Data Analyst</h1>
+        <h2>2017</h2>
+        <p>
+          Worked for a start-up in SF bay area; partnered with data scientists to analyze data using statistical and machine learning methodologies in Python and Google Cloud Platform.
+        </p>
+      </article>
+      <article>
+        <h1>Mathematician & Statistician</h1>
+        <h2>2010 - 2016</h2>
+        <p>
+          Pursued Ph.D in Statistics (didn't quite finish!) after M.S in Mathematics. Partnered with a company in Boston to build production-level statistical software. Taught undergraduate Mathematics & Statistics courses.
+        </p>
+      </article>
+
+        <!-- SEO recommends using images subdirectory and descriptive filenames -->
+        <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
+          <i class="fab fa-linkedin" style="font-size:2vmax"></i>
+        </a>
+    </section>
 
 
-      <!-- Background -->
-      <section>
-        <article>
-          <h1>Front-end Engineer</h1>
-          <h2>2018</h2>
-        </article>
-        <article>
-          <h1>Data Analyst</h1>
-          <h2>2017</h2>
-          <p>
-            Worked for a start-up in SF bay area; partnered with data scientists to analyze data using statistical and machine learning methodologies in Python and Google Cloud Platform.
-          </p>
-        </article>
-        <article>
-          <h1>Mathematician & Statistician</h1>
-          <h2>2010 - 2016</h2>
-          <p>
-            Pursued Ph.D in Statistics (didn't quite finish!) after M.S in Mathematics. Partnered with a company in Boston to build a production-level statistical software. Taught undergraduate Mathematics & Statistics courses.
-          </p>
-        </article>
-        <!-- Social media links -->
-        <figure>
-          <!-- SEO recommends using images subdirectory and descriptive filenames -->
-          <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
-            <img src="images/linkedin-logo.png" alt="https://www.linkedin.com/in/dsnair/">
-          </a>
-        </figure>
-      </section>
+    <!-- Contact -->
+    <section class="contact">
+      <p>I'd love to connect with you and talk about project prospects!</p>
 
+      <!--  Contact form -->
+      <form action="#" method="post">
+        <fieldset>
+          <input type="text"
+                 id="name"
+                 name="user_name"
+                 placeholder="Name"
+                 autofocus=True>
+          <input type="email"
+                 id="email"
+                 name="user_mail"
+                 placeholder="Email">
+          <textarea type="text"
+                    id="msg"
+                    name="user_msg"
+                    placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
 
-      <!-- Contact -->
-      <section>
-        <p>I'd love to grab coffee and talk about project prospects with you!</p>
+    <!--  Social media links -->
+    <footer>
+      <a href="https://github.com/dsnair">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/dsnair/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:nowhere@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </footer>
 
-        <!--  Contact form -->
-        <form action="#" method="post">
-          <fieldset>
-            <input type="text"
-                   id="name"
-                   name="user_name"
-                   placeholder="Name"
-                   autofocus=True>
-            <input type="email"
-                   id="email"
-                   name="user_mail"
-                   placeholder="Email">
-            <textarea type="text"
-                      id="msg"
-                      name="user_msg"
-                      placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-          </fieldset>
-        </form>
-
-        <!--  Social media links -->
-        <figure>
-          <a href="https://github.com/dsnair" title="GitHub">
-            <img src="images/github-logo.ico" alt="https://github.com/dsnair">
-          </a>
-          <a href="https://www.linkedin.com/in/dsnair/" title="LinkedIn">
-            <img src="images/linkedin-logo.png" alt="https://www.linkedin.com/in/dsnair/">
-          </a>
-          <a href="mailto:nowhere@gmail.com">
-            <img src="images/gmail-logo.ico" alt="nowhere@gmail.com" title="Email">
-          </a>
-        </figure>
-      </section>
-
-    </main>
   </body>
 </html>
