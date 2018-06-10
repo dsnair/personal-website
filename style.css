@@ -1,26 +1,28 @@
 body {
   margin: 0;
 }
+
+
 /* Home */
 header {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
   background-color: rgb(52, 59, 79);
 }
 
 header h1 {
   color: rgb(31, 192, 175);
-  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
 }
 
 header h2 {
-  text-transform: uppercase;
   color: #fff;
   font-size: 4em;
   font-weight: 400;
@@ -28,18 +30,32 @@ header h2 {
   word-spacing: 10px;
 }
 
+
 /* Background */
 .bg {
   display: grid;
-  grid-template-columns: repeat(2, minmax(50%, 1fr));
-  grid-template-rows: repeat(2, minmax(50%, 1fr));
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  grid-auto-flow: column;
   background-color: rgb(28, 30, 38);
   color: #fff;
 }
 
-#bg-eng {
+.bg article:first-child {
   background-color: rgb(31, 192, 175);
+  grid-row: 1 / span 3;
+}
+
+.bg article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.bg i {
+  color: #fff;
 }
 
 article h1 {
@@ -52,6 +68,7 @@ article h1 {
 article h2 {
   font-weight: 100;
   font-size: 1rem;
+  font-family: "Raleway", serif;
 }
 
 article p {
@@ -62,10 +79,12 @@ article p {
   word-spacing: 2px;
 }
 
+
 /* Contact */
 .contact p {
   font-family: "Raleway", serif;
 }
+
 
 /* Footer */
 footer {
