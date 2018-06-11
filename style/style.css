@@ -1,189 +1,164 @@
-/* Navigation Bar */
-nav {
+body {
+  margin: 0;
+}
+
+
+/* Home */
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  grid-row-start: 1;
-  box-shadow: 0px 4px 27px 0px rgba(45, 45, 45, 0.5);
-  display: grid;
-}
-
-nav div {
-  justify-self: center;
-  align-self: center;
-}
-
-nav a {
-  font-size: 12px;
-  font-weight: 100;
-  color: rgba(255, 255, 255, 0.5);
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  text-decoration: none;
+  background-color: rgb(52, 59, 79);
+}
+
+header h1 {
+  color: rgb(31, 192, 175);
+  font-weight: 500;
   letter-spacing: 2px;
-  padding: 10px 10px;
 }
 
-nav a:hover {
-  color: #ffffff;
-}
-
-/*  Home */
-.home h1, .home h2 {
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 5px;
-}
-
-.home h1 {
-  font-size: 80px;
-  font-weight: 900;
-  line-height: 1.5em;
-}
-
-.home h2 {
-  font-size: 20px;
+header h2 {
+  color: #fff;
+  font-size: 4em;
   font-weight: 400;
-  line-height: 1.7em;
-  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 3px;
+  word-spacing: 10px;
 }
 
-/*  Background */
+
+/* Background */
 .bg {
   display: grid;
-  align-items: center;
-  justify-items: center;
-  background-image: linear-gradient(rgba(52, 59, 79, 0.9), rgba(52, 59, 79, 0.9)),
-                    url("../images/background-bg.jpg");
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 2rem;
+  grid-auto-flow: column;
+  background-color: rgb(28, 30, 38);
+  color: #fff;
 }
 
-.bg-items {
-  display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-columns: 50% 50%;
+.bg article:first-child {
+  background-color: rgb(31, 192, 175);
+  grid-row: 1 / span 3;
 }
 
-.bg-items div {
-  height: 200px;
+.bg article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
 
-.bg-items h1 {
-  color: lime;
-  font-size: 1em;
-  font-weight: 100;
+.bg i {
+  color: #fff;
 }
 
-.bg-items h2 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 100;
+article h1 {
+  font-family: "Open Sans", sans-serif;
+  font-variant: small-caps;
+  font-size: 1.5em;
   letter-spacing: 2px;
 }
 
-.bg-items h3 {
-  font-size: 1em;
+article h2 {
   font-weight: 100;
-  letter-spacing: 0.05em;
+  font-size: 1rem;
+  font-family: "Raleway", serif;
 }
 
-.bg-items p {
-  letter-spacing: 0.05em;
-  line-height: 1.4em;
+article p {
+  font-size: 1.1em;
   font-weight: 100;
-  opacity: 0.6;
+  font-family: "Raleway", serif;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
-.bg-items #work {
-  text-align: right;
-  border-right: 1px dashed lime;
-  padding-right: 80px;
-  width: 300px;
-}
 
-.bg-items #education {
-  text-align: left;
-  margin-left: 80px;
-  width: 300px;
-}
-
-/*  Contact */
+/* Contact */
 .contact {
-  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  height: 50vh;
+}
 
+.contact form {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 20% 60% 20%;
-
-  background-image: url(../images/contact-bg.jpeg);
-  background-size: cover;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 1rem;
+  height: 30%;
+  width: 30%;
 }
 
-.contact-items {
-  grid-column-start: 2;
-  grid-row-start: 2;
-
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 80% 20%;
-
-  background-color: rgb(78, 84, 102);
-  padding: 50px 50px 0px 50px;
+.contact input {
+  outline: none;
+  border: 1px solid #000;
+  font-family: "Open Sans", serif;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
 }
 
-.contact-items p {
-  align-self: center;
-  justify-self: center;
-  line-height: 1.7em;
-  letter-spacing: 2px;
-}
-
-.contact-items fieldset {
-  border: 0;
-}
-
-.contact-items #name, #email {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.contact-items #msg {
-  width: 100%;
-  height: 150px;
-  margin-bottom: 10px;
+.contact textarea {
+  grid-column: 1 / span 3;
   resize: none;
+  outline: none;
+  border: 1px solid #000;
+  font-family: "Open Sans", serif;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
 }
 
-.contact-items button {
-  width: 100%;
-  height: 30px;
-  background-color: lime;
+.contact ::placeholder {
+  color: #000;
+  font-family: "Raleway", serif;
+  text-transform: uppercase;
+  opacity: 0.8;
 }
 
-.contact-items figure {
+.contact button {
   grid-column: 1 / span 3;
   justify-self: center;
+  border: 1px solid #000;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  background-color: rgb(240, 240, 240);
 }
 
-.contact-items img {
-  width: 30px;
-  height: 30px;
-  padding-right: 10px;
+.contact button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-.contact-items a {
-  text-decoration: none;
+.contact p {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
-/*  Common */
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(52, 59, 79);
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 10% 90%;
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 192, 175);
 }
 
-.lime, .lime:hover {
-  color: lime;
+footer a {
+  margin: 1vw;
+}
+
+footer i {
+  height: 2vh;
+  color: #fff;
+  font-size: 2vmax;
 }

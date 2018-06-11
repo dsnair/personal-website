@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <!-- Social Media Logos -->
     <link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -61,7 +61,7 @@
         </p>
       </article>
       <article>
-        <h1>Mathematician & Statistician</h1>
+        <h1>Statistician</h1>
         <h2>2010 - 2016</h2>
         <p>
           Pursued Ph.D in Statistics (didn't quite finish!) after M.S in Mathematics. Partnered with a company in Boston to build production-level statistical software. Taught undergraduate Mathematics & Statistics courses.
@@ -76,24 +76,25 @@
 
       <!--  Contact form -->
       <form action="#" method="post">
-        <fieldset>
-          <input type="text"
-                 id="name"
-                 name="user_name"
-                 placeholder="Name"
-                 autofocus=True>
-          <input type="email"
-                 id="email"
-                 name="user_mail"
-                 placeholder="Email">
-          <textarea type="text"
-                    id="msg"
-                    name="user_msg"
-                    placeholder="Message"></textarea>
+        <input type="text"
+               id="name"
+               name="user_name"
+               placeholder="Name"
+               required>
+        <input type="email"
+               id="email"
+               name="user_mail"
+               placeholder="E-mail"
+               required>
+        <textarea type="text"
+                  id="msg"
+                  name="user_msg"
+                  placeholder="Message"
+                  required></textarea>
         <button type="submit">Send</button>
-        </fieldset>
       </form>
     </section>
+
 
     <!--  Social media links -->
     <footer>
