@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e465e;
+  height: 8vh;
+}
+
+footer a {
+  margin: 1vw;
+}
+
+footer a:hover {
+  border: 1px solid rgb(240, 240, 240);
+  padding: 0.5vw;
+  transition: 0.5s;
+}
+
+footer i {
+  height: 2vh;
+  color: rgb(240, 240, 240);
+  font-size: 2vmax;
+}

@@ -1,30 +1,48 @@
-/* Navigation Bar */
-nav {
-  text-align: center;
-  grid-row-start: 1;
-  box-shadow: 0px 4px 27px 0px rgba(45, 45, 45, 0.5);
-  display: grid;
+.navbar-open {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
 }
 
-nav div {
-  justify-self: center;
-  align-self: center;
+.navbar-close {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
 }
 
-.unselected {
-  font-size: 12px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
+#navbar {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  height: 8vh;
+  transition: all 1s ease-in-out;
+}
+
+#navbar a {
   text-decoration: none;
-  letter-spacing: 2px;
-  padding: 10px 10px;
+  color: rgb(28, 30, 35);
+  font-family: "Open Sans", serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
-.unselected:hover {
-  color: #ffffff;
+#navbar a:hover {
+  border: 1px solid rgb(28, 30, 35);
+  padding: 1em;
 }
 
-.selected {
-  color: lime;
+#navbar i {
+  color: rgb(28, 30, 35);
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+#navbar i:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 0.75em;
 }

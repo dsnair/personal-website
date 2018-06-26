@@ -1,20 +1,34 @@
 import React, { Component } from "react";
+import Nav from "./Nav";
+import "./Home.css";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { menu: false };
+    this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  closeMenu() {
+    this.setState({ menu: false });
+  }
+
+  openMenu() {
+    this.setState({ menu: true });
+  }
+
   render() {
     return (
-      <main className="home">
-        <header>
-          <h1>
-            I<span className="lime">'</span>m <br />
-            Divya Nair<span className="lime">.</span>
-          </h1>
-        </header>
-        <h2>
-          Front-end Engineer <span className="lime">&amp;</span> <br />
-          Data Scientist
-        </h2>
-      </main>
+      <React.Fragment>
+        <Nav menu={this.state.menu} closeMenu={this.closeMenu} />
+        <main className="home">
+          <i className="fas fa-bars" onClick={() => this.openMenu()} />
+          <header>
+            <h1>Divya Nair</h1>
+            <h2>Front-end Engineer</h2>
+          </header>
+        </main>
+      </React.Fragment>
     );
   }
 }

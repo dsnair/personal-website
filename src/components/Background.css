@@ -1,0 +1,50 @@
+.bg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  padding: 72px 0;
+  background-color: rgb(28, 30, 35);
+  color: rgb(240, 240, 240);
+  height: 85%;
+}
+
+.bg article:first-child {
+  background-color: rgb(230, 230, 230);
+  color: #000;
+}
+
+.bg article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.bg h1 {
+  font-family: "Open Sans", sans-serif;
+  font-variant: small-caps;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.bg h2 {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.bg p {
+  font-family: "Raleway", serif;
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 1.6;
+}
+
+.bg i {
+  color: rgb(28, 30, 35);
+  font-size: 2vmax;
+}
