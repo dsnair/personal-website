@@ -11,7 +11,7 @@
   width: 0;
 }
 
-#navbar {
+.navbar {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
@@ -20,7 +20,7 @@
   transition: all 1s ease-in-out;
 }
 
-#navbar a {
+.navbar a {
   text-decoration: none;
   color: rgb(28, 30, 35);
   font-family: "Open Sans", serif;
@@ -30,18 +30,18 @@
   transition: 0.5s;
 }
 
-#navbar a:hover {
+.navbar a:hover {
   border: 1px solid rgb(28, 30, 35);
   padding: 1em;
 }
 
-#navbar i {
+.navbar i {
   color: rgb(28, 30, 35);
   font-size: 1.5em;
   transition: 0.5s;
 }
 
-#navbar i:hover {
+.navbar i:hover {
   cursor: pointer;
   border: 1px solid #000;
   padding: 0.75em;

@@ -4,7 +4,7 @@ import "./Contact.css";
 class Contact extends Component {
   render() {
     return (
-      <main className="contact">
+      <section id="contact">
         <p>Looking for a project partner? I'd love to connect with you!</p>
         <form>
           <input type="text" name="name" placeholder="Name" required />
@@ -12,7 +12,7 @@ class Contact extends Component {
           <textarea type="text" name="msg" placeholder="Message" required />
           <button type="submit">Send</button>
         </form>
-      </main>
+      </section>
     );
   }
 }

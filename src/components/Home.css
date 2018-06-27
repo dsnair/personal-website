@@ -1,11 +1,11 @@
-.home {
+#home {
   display: flex;
   flex-direction: column;
   height: 100%;
   background-color: rgb(52, 59, 79);
 }
 
-.home header {
+#home header {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -17,7 +17,7 @@
   margin-top: -75px;
 }
 
-.home h1 {
+#home h1 {
   font-weight: 500;
   letter-spacing: 2px;
   position: relative;
@@ -36,19 +36,19 @@
   }
 }
 
-.home h2 {
+#home h2 {
   font-size: 4em;
   font-weight: 400;
   letter-spacing: 3px;
   word-spacing: 10px;
 }
 
-.home i {
+#home i {
   color: rgb(240, 240, 240);
   font-size: 2em;
   padding: 1em;
 }
 
-.home i:hover {
+#home i:hover {
   cursor: pointer;
 }

@@ -1,33 +1,33 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
+import "./Nav.css";
 import "./Home.css";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { menu: false };
-    this.closeMenu = this.closeMenu.bind(this);
-  }
+  state = {
+    navVisible: false
+  };
 
-  closeMenu() {
-    this.setState({ menu: false });
-  }
-
-  openMenu() {
-    this.setState({ menu: true });
+  navStatus() {
+    this.setState({
+      navVisible: !this.state.navVisible
+    });
   }
 
   render() {
     return (
       <React.Fragment>
-        <Nav menu={this.state.menu} closeMenu={this.closeMenu} />
-        <main className="home">
-          <i className="fas fa-bars" onClick={() => this.openMenu()} />
+        <Nav
+          navVisible={this.state.navVisible}
+          navStatus={this.navStatus.bind(this)}
+        />
+        <section id="home">
+          <i className="fas fa-bars" onClick={() => this.navStatus()} />
           <header>
             <h1>Divya Nair</h1>
             <h2>Front-end Engineer</h2>
           </header>
-        </main>
+        </section>
       </React.Fragment>
     );
   }

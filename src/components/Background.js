@@ -4,7 +4,7 @@ import "./Background.css";
 class Background extends Component {
   render() {
     return (
-      <main className="bg">
+      <section id="bg">
         <article>
           <h1>Front-end Engineer</h1>
           <h2>2018+</h2>
@@ -41,7 +41,7 @@ class Background extends Component {
             Mathematics & Statistics courses.
           </p>
         </article>
-      </main>
+      </section>
     );
   }
 }

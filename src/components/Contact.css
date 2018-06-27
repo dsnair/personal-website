@@ -1,21 +1,21 @@
-.contact {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 92%;
   background-color: rgb(52, 59, 79);
   color: rgb(240, 240, 240);
+  height: 92vh;
 }
 
-.contact form {
+#contact form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1.75fr 5fr 1fr;
   width: 50%;
 }
 
-.contact input {
+#contact input {
   outline: none;
   border: 1px solid rgb(240, 240, 240);
   padding: 10px;
@@ -26,7 +26,7 @@
   color: rgb(240, 240, 240);
 }
 
-.contact textarea {
+#contact textarea {
   grid-column: 1 / span 3;
   resize: none;
   outline: none;
@@ -39,14 +39,14 @@
   color: rgb(240, 240, 240);
 }
 
-.contact ::placeholder {
+#contact ::placeholder {
   color: rgb(240, 240, 240);
   font-family: "Raleway", serif;
   text-transform: uppercase;
   opacity: 0.7;
 }
 
-.contact button {
+#contact button {
   grid-column: 1 / span 3;
   justify-self: center;
   height: 5vh;
@@ -59,14 +59,14 @@
   color: rgb(28, 30, 35);
 }
 
-.contact button:hover {
+#contact button:hover {
   background-color: #3e465e;
   color: rgb(240, 240, 240);
   border: 1px solid rgb(240, 240, 240);
   cursor: pointer;
 }
 
-.contact p {
+#contact p {
   font-family: "Raleway", sans-serif;
   font-size: 1.3em;
   text-align: center;
