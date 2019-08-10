@@ -1,22 +1,12 @@
-import React, { Component } from "react";
+import React from 'react'
 
-import "./index.css";
-import Home from "./Home/Home";
-import Background from "./Background/Background";
-import Contact from "./Contact/Contact";
-import Footer from "./Footer/Footer";
+import './index.css'
+import Home from './Home/Home'
 
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Home />
-        <Background />
-        <Contact />
-        <Footer />
-      </React.Fragment>
-    );
-  }
-}
+const App = () => (
+  <>
+    <Home />
+  </>
+)
 
-export default App;
+export default App

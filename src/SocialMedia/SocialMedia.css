@@ -1,0 +1,21 @@
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.socialmedia a {
+  margin: 10px;
+}
+
+.socialmedia i {
+  color: #000000;
+  opacity: 0.6;
+  font-size: 24px;
+}
+
+.socialmedia i:hover {
+  color: #257b8c;
+  opacity: 0.9;
+}
