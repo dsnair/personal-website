@@ -1,36 +1,17 @@
-import React, { Component } from "react";
-import Nav from "./Nav";
-import "./Nav.css";
-import "./Home.css";
+import React from 'react'
+import Closeup from './Closeup.jpg'
+import './Home.css'
 
-class Home extends Component {
-  state = {
-    navVisible: false
-  };
+const Home = () => (
+  <section id="home">
+    <img src={Closeup} alt="Divya Nair's headshot" />
+    <h2>Hello! I'm</h2>
+    <h1>Divya Nair</h1>
+    <p>
+      A Fullstack Engineer with Frontend industry experience and Data Science
+      background.
+    </p>
+  </section>
+)
 
-  navStatus() {
-    this.setState({
-      navVisible: !this.state.navVisible
-    });
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <Nav
-          navVisible={this.state.navVisible}
-          navStatus={this.navStatus.bind(this)}
-        />
-        <section id="home">
-          <i className="fas fa-bars" onClick={() => this.navStatus()} />
-          <header>
-            <h1>Divya Nair</h1>
-            <h2>Front-end Engineer</h2>
-          </header>
-        </section>
-      </React.Fragment>
-    );
-  }
-}
-
-export default Home;
+export default Home
