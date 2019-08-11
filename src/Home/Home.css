@@ -12,7 +12,7 @@
   height: 200px;
   width: 200px;
   margin: 20px auto;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .home h1 {
@@ -42,4 +42,18 @@
   .home p {
     width: 600px;
   }
+}
+
+.projects-link {
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0, 0.6);
+  border-radius: 5%;
+  margin: 20px;
+  padding: 10px;
+  font-size: 18px;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.projects-link:hover {
+  border: 2px solid rgb(37, 123, 140, 0.9);
 }
