@@ -1,8 +1,8 @@
 {
-  "name": "resume",
+  "name": "personal-website",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://dsnair.github.io/resume",
+  "homepage": "https://dsnair.github.io/personal-website",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
